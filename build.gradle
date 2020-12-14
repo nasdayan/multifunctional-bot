@@ -18,6 +18,7 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven { url 'https://raw.githubusercontent.com/adrianoluis/rickandmortyapi-java/mvn-repo' }
 }
 
 dependencies {
@@ -26,6 +27,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	compile "org.telegram:telegrambots:5.0.1"
+	compile 'net.adrianoluis:rickandmortyapi-java:1.1.1'
 }
 
 test {
