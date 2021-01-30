@@ -6,8 +6,11 @@
 
 ### Используемые API
 https://core.telegram.org/bots/api
+
 https://www.file.io/#api
+
 http://currate.ru/
+
 https://openweathermap.org/api
 
 ### Поддерживаемые команды
