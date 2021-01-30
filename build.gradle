@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.github.nasdayan'
 version = '1.0.0'
-sourceCompatibility = '11'
+sourceCompatibility = '12'
 
 configurations {
 	compileOnly {

@@ -4,6 +4,7 @@ import com.github.nasdayan.trackbot.bot.Bot;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public interface Ability {
+
     /**
      * Определяет, должна ли способность реагировать на событие
      * @param update Событие
@@ -16,5 +17,4 @@ public interface Ability {
      * @param update Событие
      */
     void actions(Update update, Bot bot);
-
 }

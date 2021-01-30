@@ -15,6 +15,7 @@ import java.text.MessageFormat;
 @RequiredArgsConstructor
 @Slf4j
 public class WeatherAbility implements Ability {
+
     private final WeatherService weatherService;
 
     @Override
@@ -30,8 +31,7 @@ public class WeatherAbility implements Ability {
         String chatId = update.getMessage().getChatId().toString();
         try {
             bot.sendMsg(chatId, MessageFormat.format("Сейчас в городе {0} {1} градус(a, ов)", StringUtils.capitalize(city.toLowerCase()), weatherService.getTemperature(city)));
-        }
-        catch (CityNotFoundException e) {
+        } catch (CityNotFoundException e) {
             bot.sendMsg(chatId, "Нет такого города");
         }
     }

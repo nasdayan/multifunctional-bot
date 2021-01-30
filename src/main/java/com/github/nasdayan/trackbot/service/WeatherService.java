@@ -24,9 +24,10 @@ public class WeatherService {
     public WeatherService(@Value("${owm.token}") final String owmToken) {
         url = "http://api.openweathermap.org/data/2.5/weather?lang=ru&units=metric&appid=" + owmToken + "&q=";
     }
+
     public int getTemperature(String city) {
         try {
-            final URL url = new URL( this.url + city);
+            final URL url = new URL(this.url + city);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             try (InputStream inputStream = connection.getInputStream()) {
@@ -37,8 +38,7 @@ public class WeatherService {
             }
         } catch (FileNotFoundException e) {
             throw new CityNotFoundException();
-        }
-        catch (IOException e ) {
+        } catch (IOException e) {
             log.error("Ошибка получения погоды");
             throw new RuntimeException(e);
         }

@@ -18,12 +18,6 @@ public class PongAbility implements Ability {
 
     @Override
     public void actions(Update update, Bot bot) {
-//        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "pong");
-//        try {
-//            bot.execute(sendMessage);
-//        } catch (TelegramApiException e) {
-//            log.error("Ошибка отправки сообщения");
-//        }
         bot.sendMsg(update.getMessage().getChatId().toString(), "pong");
     }
 }
