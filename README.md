@@ -5,17 +5,17 @@
 3) формирование zip-архива из текстового файла и его заливка на файлообменник;
 
 ### Используемые API
-https://core.telegram.org/bots/api
+- https://core.telegram.org/bots/api
 
-https://www.file.io/#api
+- https://www.file.io/#api
 
-http://currate.ru/
+- http://currate.ru/
 
-https://openweathermap.org/api
+- https://openweathermap.org/api
 
 ### Поддерживаемые команды
-rate - курс рубля к доллару и евро
+- rate - курс рубля к доллару и евро
 
-weather {город} - погода в заданном городе
+- weather {город} - погода в заданном городе
 
-zip {текст} - архивация, заливка на файлообменник и возврат ссылки 
+- zip {текст} - архивация, заливка на файлообменник и возврат ссылки 
